@@ -17,12 +17,22 @@ body {
   overflow-x: hidden;
 }
 a {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
+}
+
+a:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+.tm-gallery-container img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
 }
 
 a:focus {
@@ -34,11 +44,13 @@ a:focus {
 }
 
 .btn:hover {
-  background-color: #ced4da;
+  background-color: #3496d8;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
 }
 
 .tm-section-pad-top {
-  padding-top: 135px;
+  padding-top: 100px;
 }
 
 .tm-text-primary {
@@ -59,7 +71,7 @@ a:focus {
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
   color: white;
-  background-color: #73c1f6;
+  background-color: #3496d8;
 }
 
 /* Navbar */
@@ -69,7 +81,7 @@ a:focus {
   width: 100%;
   z-index: 1000;
   background-color: transparent;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .tm-navbar.scroll {
@@ -85,6 +97,8 @@ a:focus {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
   color: #3496d8;
 }
 
@@ -108,6 +122,8 @@ a:focus {
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
   color: #3496d8;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
 }
 
 .navbar-toggler {
@@ -217,6 +233,12 @@ a:focus {
   background: #3496d8;
 }
 
+.tm-down-arrow-link {
+  color: white;
+}
+.tm-down-arrow-link:hover {
+  color: #3496d8;
+}
 /* About */
 
 .tm-section-title {
@@ -365,7 +387,8 @@ figure.effect-honey img {
 
 figure.effect-honey:hover img {
   /* opacity: 0.5; */
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition: all 0.5s ease;
 }
 
 figure.effect-honey figcaption::before {
@@ -424,7 +447,7 @@ figure.effect-honey:hover h2 i {
   min-height: 850px;
   position: relative;
   padding-bottom: 50px;
-  padding-top: 160px;
+  padding-top: 150px;
 }
 
 .tm-underline {
@@ -440,7 +463,7 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-contact-item {
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 
 .tm-contact-item-link {
@@ -451,7 +474,7 @@ figure.effect-honey:hover h2 i {
 .tm-contact-item-link i,
 .tm-contact-item-link span {
   color: white;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .tm-contact-item-link:hover i,
@@ -489,7 +512,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-footer {
   position: absolute;
-  bottom: 35px;
+  bottom: 90px;
   left: 0;
   right: 0;
   padding: 0 15px;
@@ -511,7 +534,7 @@ p {
 
 @media (min-width: 768px) {
   .tm-intro-text-container {
-    padding-left: 65px;
+    padding-left: 0px;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
@@ -536,7 +559,7 @@ p {
 
 @media (max-width: 991px) {
   .tm-intro-text-container {
-    padding-left: 15px;
+    padding-left: 0px;
     padding-top: 30px;
     max-width: 600px;
     margin-left: auto;
