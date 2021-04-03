@@ -1,0 +1,124 @@
+.hdr-area.hdr-sticky {
+    min-height: 80px;
+}
+
+.hdr-area {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 1200px)
+.hdr-container {
+    max-width: 1140px;
+}
+
+
+@media (min-width: 1200px)
+.container {
+    max-width: 1140px;
+}
+
+.hdr-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
+
+.hdr-col {
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+.hdr-area .hdr-nav {
+    min-height: 80px;
+    background: transparent; }
+
+.hdr-nav {
+    min-height: 80px;
+    background: transparent; }
+
+.hdr {
+    line-height: 80px;
+    color: red;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    transition: all 0.3s ease 0s; }
+
+.hdr-logo {
+    line-height: 80px;
+    color: red;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    transition: all 0.3s ease 0s; }
+
+.hdr-nav a {
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    color: #7a7a7a;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    height: 40px;
+    line-height: 40px;
+    border: transparent;
+    letter-spacing: 1px; }
+
+#hdr a {
+    font-size: 25px;
+    color: blue ;
+    padding: 10px; 
+    margin: 0px; }
+
+#hdr ul a { font-size: 20px;
+    color: darkgray; }
+
+.wrap {
+    width: 100%;
+    margin: 0px auto;
+    position: relative; }
+
+.wrap img {
+    width: 100%;
+    vertical-align: middle; }
+
+.wmsg {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%; }
+
+.wmsg-table {
+    display: table;
+    width: 100%;
+    height: 100%; }
+
+.wmsg-table-row {
+    display: table-row; }
+
+.wmsg-table-cell {
+    display: table-cell;
+    vertical-align:middle; }
+
+/* block level element */
+.wmsg h1 {
+    font-size: 45px;
+    text-align: center;
+    color: white; }
+
+/* inline element */
+a { font-size: 20px; 
+    font-weight: bold; 
+    color: black; 
+    text-decoration: none; }
+
+P { color: blue; }
+
+li{ color: blueviolet; }
+
