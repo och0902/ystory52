@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ystory52.com/sitemap.xml
