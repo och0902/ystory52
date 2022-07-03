@@ -1,0 +1,378 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+   /* border: 1px solid red; */
+}
+.header {
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(../img/ystory52-1.jpg);
+   background-size: cover;
+   background-position: center;
+   overflow: hidden;
+}
+navbar {
+   display: flex;
+   align-items: center;
+   margin: 2% 3%;
+}
+navbar a {
+   text-decoration: none;
+}
+.logo {
+   display: flex;
+   align-items: center;
+}
+.logo img {
+   height: 60px;
+   margin-right: 20px;
+}
+.logo h1 {
+   color: #fff;
+   font-weight: 500;
+   position: relative;
+}
+.menu {
+   flex: 1;
+   text-align: right;   
+   align-items: center;
+}
+#menuList {
+   margin-top: -15px;
+}
+#menuList li {
+   list-style: none;
+   display: inline-block;
+   margin-right: 30px;
+   position: relative;
+}
+#menuList li a {
+   text-decoration: none;
+   color: #fff;
+   font-size: 20px;
+   font-weight: 300;
+}
+.logo h1::after,
+#menuList li a::after {
+   content: '';
+   width: 0;
+   height: 3px;
+   position: absolute;
+   bottom: -5px;
+   left: 50%;
+   transform: translate(-50%);
+   background: #fff;
+   transition: 0.5s;
+}
+.logo h1:hover::after,
+#menuList li a:hover::after {
+   width: 50%;
+}
+.menuIcon {
+   height: 75px;
+   display: none;
+}
+.we-are {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.col-1 {
+   margin-top: 45vh;
+   flex-basis: 70%;
+   margin-left: 5%;
+}
+.col-1 h1 {
+   color: #fff;
+   font-size: 100px;
+   color: transparent;
+   -webkit-text-stroke: 1px #fff;
+}
+.col-1 h2 {
+   color: #fff;
+   font-size: 25px;
+   line-height: 40px;
+   font-weight: 300;
+}
+.col-2 {
+   margin-top: 45vh;
+   flex-basis: 30%;
+   margin-right: 5%;
+   position: absolute;
+   right: 10px;
+}
+.col-2 img {
+   height: 80px;
+   display: block;
+   margin: 30px;
+}
+.about,
+.our-works {
+   width: 84%;
+   margin: auto;
+   color: #555;
+   margin-bottom: 120px;
+}
+.about {
+   margin-top: 150px;
+}
+.about h1,
+.our-works h1 {
+   margin-bottom: 60px;
+   text-align: center;
+   font-size: 50px;
+   font-weight: 300;
+   color: #3496d8;
+}
+.about p,
+.our-works p {
+   margin: 30px;
+}
+.about li {
+   margin: 10px 0;
+}
+hr {
+   width: 90%;
+   color: #ccc;
+   margin: 100px auto;
+}
+.our-works img {
+   height: 30px;
+   margin-bottom: -5px; 
+}
+.our-works .col {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.our-works a {
+   text-decoration: none;
+}
+.project {
+   display: grid;
+   grid-template-columns: 300px;
+   grid-template-rows: 210px 210px 80px;
+   grid-template-areas: "image" "text" "stats";
+   border-radius: 15px;
+   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+   text-align: center;
+   transition: 0.3s ease;
+   cursor: pointer;
+   margin: 25px 0;
+}
+.pjt-logo1 {
+   grid-area: image;
+   background: url("../img/5252Japanes.png");
+   background-size: 40%;
+   background-repeat: no-repeat;
+   background-position: center; 
+}
+.pjt-title {
+   grid-area: text;
+   /* margin: 10px; */
+}
+.pjt-title h2 {
+   font-size:28px;
+   color: #3496d8;
+}
+.pjt-title p {
+   color: #555;
+   font-size:15px;
+}
+.pjt-description {
+   grid-area: stats; 
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   background: #3496d8;
+}
+.pjt-description p {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+}
+.project:hover {
+   transform: scale(105%);
+   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.pjt-logo2 {
+   grid-area: image;
+   background: url("../img/oyeeFamilyGallery.png");
+   background-size: 40%;
+   background-repeat: no-repeat;
+   background-position: center; 
+}
+.pjt-logo3 {
+   grid-area: image;
+   background: url("../img/yoonseoProfile.png");
+   background-size: 40%;
+   background-repeat: no-repeat;
+   background-position: center; 
+}
+.footer {
+   width: 100%;
+   height: 100vh;
+   background-image: url(../img/ystory52-2.jpg);
+   background-size: cover;
+   background-position: center;
+   overflow: hidden;
+}
+.footer h1 {
+   margin: 150px 0 50px 0;
+   text-align: center;
+   font-size: 50px;
+   font-weight: 300;
+   color: #555;
+}
+.footer .row {
+   width: 90%;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.footer .col {
+   flex-basis: 50%;
+   margin: 30px 0;
+}
+.footer a {   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   color: #555;
+}
+.footer a i {
+   margin-right: 10px;
+}
+.footer .copyright {
+   width: 90%;
+   margin: 100px auto;
+}
+.footer .copyright p {
+   color: #555;
+   text-align: center;
+}
+
+
+@media only screen and (max-width: 1200px) {
+   .header {
+      height: 80vh;
+      /* position: relative; */
+   }
+   #menuList {
+      width: fit-content;
+      text-align: center;
+      background: transparent;
+      position: absolute;
+      top: 13%;
+      right: 3%;
+      z-index: 2; 
+   }
+   #menuList li {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-right: 20px;
+   }
+   .menuIcon {
+      display: block;
+      cursor: pointer;
+   }
+   #menuList {
+      overflow: hidden;
+      transition: 0.5s;
+   }
+   .col-1 {
+      margin-top: 40vh;
+      margin-left: 5%;
+   }
+   .col-1 h1 {
+      font-size: 70px;
+   }
+   .col-1 h2 {
+      font-size: 20px;
+      line-height: 30px;
+   }
+   .col-2 {
+      margin-top: 35vh;
+   }
+   .col-2 img {
+      height: 65px;
+      margin: 25px 0;
+   }
+   .our-works .col {
+      display: block;
+   }
+   .project {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 240px 180px 80px;
+      margin: 45px 0;
+   }
+   .pjt-logo1,
+   .pjt-logo2,
+   .pjt-logo3 {
+      background-size: 20%;
+   }
+   .footer {
+      height: 80vh;
+   }
+   .footer .row {
+      display: block;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .header {
+      height: 60vh;
+      padding: 0;
+   }
+   navbar {
+      padding: 5px 0;
+   }
+   .logo img {
+      height: 50px;
+      margin-right: 10px;
+   }
+   .logo h1 {
+      font-size: 30px;
+      font-weight: 400;
+   }
+   #menuList {
+      top: 11%;
+      right: 3%;
+   }
+   .we-are {
+      /* margin-top: 30vh; */
+   }
+   .col-1 {
+      margin-top: 28vh;
+      /* flex-basis: 90%; */
+      margin-left: 5%;
+   }
+   .col-1 h1 {
+      font-size: 40px;
+   }
+   .col-1 h2 {
+      font-size: 15px;
+      line-height: 25px;
+   }
+   .col-2 {
+      margin-top: 22vh;
+   }
+   .col-2 img {
+      height: 50px;
+      margin: 20px 0;
+   }
+   .pjt-logo1,
+   .pjt-logo2,
+   .pjt-logo3 {
+      background-size: 30%;
+   }
+   .header {
+      height: 60vh;
+   }
+}

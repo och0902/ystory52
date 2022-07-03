@@ -148,7 +148,7 @@ a:focus {
 /* Hero */
 
 #hero {
-  background-image: url(../img/ystory52-1.jpg);
+  background-image: url(../img/ystory52-2.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
@@ -188,7 +188,7 @@ a:focus {
 }
 
 .tm-hero-text-container-inner {
-  margin-top: -90px;
+  margin-top: 00px;
 }
 
 .tm-hero-title {
@@ -219,7 +219,7 @@ a:focus {
 }
 
 .tm-down-arrow {
-  color: #c57e7d;
+  color: white;
   cursor: pointer;
   background: white;
   border-radius: 50%;
@@ -441,7 +441,7 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  background-image: url(../img/the-town-bg-02.jpg);
+  background-image: url(../img/ystory52-3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   min-height: 850px;

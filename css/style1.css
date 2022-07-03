@@ -1,0 +1,133 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+   /* border: 1px solid red; */
+}
+
+#Header {
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(../img/ystory52.jpg);
+   background-size: cover;
+   background-position: center;
+   padding: 0 3%;
+}
+navbar {   
+   width: 100%;
+   display: flex;
+   align-items: center;
+   padding: 30px 0;
+}
+navbar a {
+   text-decoration: none;
+}
+.logo {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.logo img {
+   height: 60px;
+   margin: -5px 20px 0 20px;
+}
+.logo h1 {
+   color: #fff;
+   position: relative;
+}
+.menubar {
+   flex: 1;
+   text-align: right;
+   position: relative;
+}
+.menu {
+   display: none;
+}
+#menulist {
+   padding-right: 30px;
+   margin-top: 5px;
+}
+#menulist li {
+   display: inline-block;
+   list-style: none;
+   margin: 10px 20px;
+}
+#menulist li a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 20px;
+}
+.logo h1::after,
+#menulist li a::after {
+   content: '';
+   width: 0;
+   height: 3px;
+   position: absolute;
+   bottom: -5px;
+   left: 50%;
+   transform: translate(-50%);
+   background: #fff;
+   transition: 0.5s;
+}
+.logo h1:hover::after,
+#menulist li a:hover::after {
+   width: 50%;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+   #Header {
+      height: 80vh;
+   }
+   #menulist {
+      position: absolute;
+      top: 110px;
+      right: 0;
+      background: transparent;
+   }
+   #menulist li {
+      display: block;
+      margin-right: 75px;
+   }
+   .menu {
+      display: block;
+      padding-right: 30px;
+      margin-top: 5px;
+      cursor: pointer;
+   }
+   .menu img {
+      position: absolute;
+      right: 30px;
+      height: 70px;
+      margin-top: 5px;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   #Header {
+      height: 60vh;
+      padding: 0;
+   }
+   #menulist {
+      top: 100px;
+   }
+   #menulist li {
+      margin-right: 45px;
+   }
+   navbar {
+      padding: 20px 0;
+   }
+   .logo img {
+      height: 50px;
+      margin: -5px 10px 0 25px;
+   }
+   .logo h1 {
+      font-size: 30px;
+      font-weight: 400;
+   }
+   .menubar {
+      padding-right: 25px;
+   }
+}
