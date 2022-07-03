@@ -2,7 +2,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: sans-serif;
+   font-family: "sans-serif";
    /* border: 1px solid red; */
 }
 .header {
@@ -80,7 +80,7 @@ navbar a {
    align-items: center;
 }
 .col-1 {
-   margin-top: 45vh;
+   margin-top: 50vh;
    flex-basis: 70%;
    margin-left: 5%;
 }
@@ -97,7 +97,7 @@ navbar a {
    font-weight: 300;
 }
 .col-2 {
-   margin-top: 45vh;
+   margin-top: 40vh;
    flex-basis: 30%;
    margin-right: 5%;
    position: absolute;
@@ -224,7 +224,7 @@ hr {
    text-align: center;
    font-size: 50px;
    font-weight: 300;
-   color: #555;
+   color: #3496d8;
 }
 .footer .row {
    width: 90%;
@@ -242,7 +242,7 @@ hr {
    align-items: center;
    justify-content: center;
    text-decoration: none;
-   color: #555;
+   color: #3496d8;
 }
 .footer a i {
    margin-right: 10px;
@@ -252,7 +252,7 @@ hr {
    margin: 100px auto;
 }
 .footer .copyright p {
-   color: #555;
+   color: #3496d8;
    text-align: center;
 }
 
@@ -286,7 +286,7 @@ hr {
       transition: 0.5s;
    }
    .col-1 {
-      margin-top: 40vh;
+      margin-top: 30vh;
       margin-left: 5%;
    }
    .col-1 h1 {
@@ -297,7 +297,7 @@ hr {
       line-height: 30px;
    }
    .col-2 {
-      margin-top: 35vh;
+      margin-top: 20vh;
    }
    .col-2 img {
       height: 65px;
@@ -305,6 +305,8 @@ hr {
    }
    .our-works .col {
       display: block;
+      width: 600px;
+      margin: auto;
    }
    .project {
       display: grid;
@@ -349,7 +351,7 @@ hr {
       /* margin-top: 30vh; */
    }
    .col-1 {
-      margin-top: 28vh;
+      margin-top: 20vh;
       /* flex-basis: 90%; */
       margin-left: 5%;
    }
@@ -361,11 +363,14 @@ hr {
       line-height: 25px;
    }
    .col-2 {
-      margin-top: 22vh;
+      margin-top: 10vh;
    }
    .col-2 img {
       height: 50px;
       margin: 20px 0;
+   }
+   .our-works .col {
+      width: auto;
    }
    .pjt-logo1,
    .pjt-logo2,
